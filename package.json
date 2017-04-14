@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "api-server",
   "version": "1.0.0",
   "description": "express服务+mogondb数据库",
   "main": "app.js",
