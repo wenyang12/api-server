@@ -18,7 +18,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(favicon(__dirname + '/src/assets/favicon.ico'))
 app.use(express.static('dist'))
-app.use('/',index)
+// app.use('/',index)
 app.use('/api',pic)
 
 app.listen(port, () => {
