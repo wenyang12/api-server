@@ -7,12 +7,13 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const index = require('./router/index')
 const pic = require('./router/pic')
+const port = require('./config/port')
 
 mongoose.connect(config.mongodb)
 mongoose.Promise = global.Promise
 
 const app = express()
-const port = process.env.PORT || 3000
+
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
